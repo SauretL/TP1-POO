@@ -1,0 +1,14 @@
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.AssemblyInfoInputs.cache
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.AssemblyInfo.cs
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.csproj.CoreCompileInputs.cache
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\bin\Debug\net8.0\TP1.exe
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\bin\Debug\net8.0\TP1.deps.json
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\bin\Debug\net8.0\TP1.runtimeconfig.json
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\bin\Debug\net8.0\TP1.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\bin\Debug\net8.0\TP1.pdb
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\refint\TP1.dll
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.pdb
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\TP1.genruntimeconfig.cache
+D:\Sauret\Programación\CFP6\Programacion Orientada a Objetos\Proyecto 1\TP1\TP1\obj\Debug\net8.0\ref\TP1.dll
