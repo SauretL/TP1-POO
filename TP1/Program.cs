@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 using System.Xml.Linq;
+using TP1.Clases;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 /* Desafío: Crea tu propia clase
@@ -43,8 +44,8 @@ namespace TP1
 
         static void Main(string[] args)
         { 
-            Enemigo goblin = new Enemigo(1, "Goblin", "Un monstruo pequeño y molesto", 15, 5, 50);
-            Enemigo ogro = new Enemigo(2, "Ogro", "Una bestia enorme y fuerte", 30, 10, 120);
+            Enemigos goblin = new Enemigos(1, "Goblin", "Un monstruo pequeño y molesto", 15, 5, 5, 2, 50);
+            Enemigos ogro = new Enemigos(2, "Ogro", "Una bestia enorme y fuerte", 30, 15, 10, 5, 120);
 
             while (ogro.EstaVivo() && goblin.EstaVivo())
             {
@@ -53,9 +54,14 @@ namespace TP1
                 goblin.MostrarInfo();
                 ogro.MostrarInfo();
 
+                int daño1 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
+                int daño2 = ogro.daño(goblin.AtaquePsiquico, goblin.DefensaPsiquica);
+                int daño3 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
+
                 Console.WriteLine("\n=== COMBATE ===");
-                goblin.RecibirDaño(25);
-                ogro.RecibirDaño(15);
+                goblin.RecibirDaño(daño1);
+                ogro.RecibirDaño(daño2);
+                goblin.RecibirDaño(daño3);
 
                 Console.WriteLine($"\n¿El goblin está vivo? {goblin.EstaVivo()}");
                 Console.WriteLine($"¿El ogro está vivo? {ogro.EstaVivo()}");
