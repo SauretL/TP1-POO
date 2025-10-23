@@ -18,9 +18,11 @@ namespace TP1.Clases
         private int defensaFisica;
         private int defensaPsiquica;
         private int hp;
+        private int maxHp;
 
 
-        public Enemigos(int id, string nombre, string descripcion, int ataqueFisico, int ataquePsiquico, int defensaFisica, int defensaPsiquica, int hp)
+        public Enemigos(int id, string nombre, string descripcion, int ataqueFisico, int ataquePsiquico, int defensaFisica, 
+            int defensaPsiquica, int hp, int maxHp)
         {
             this.id = id;
             this.nombre = nombre;
@@ -30,6 +32,7 @@ namespace TP1.Clases
             this.defensaFisica = defensaFisica;
             this.defensaPsiquica = defensaPsiquica;
             this.hp = hp;
+            this.maxHp = maxHp;
         }
 
         //get y set
@@ -86,9 +89,13 @@ namespace TP1.Clases
                     hp = value; }
         }
 
+        //metodos
+
         public void MostrarInfo()
         {
-            Console.WriteLine($"ID: {id} | Nombre: {nombre} | HP: {hp} | Ataque Fisico: {ataqueFisico} | Ataque Psiquico: {ataquePsiquico} | Defensa Fisica: {defensaFisica} | DefensaPsiquica: {defensaPsiquica} | Descripción: {descripcion}");
+            Console.WriteLine($"ID: {id} | Nombre: {nombre} | HP: {hp}/{maxHp} | Ataque Fisico: {ataqueFisico} " +
+                $"| Ataque Psiquico: {ataquePsiquico} | Defensa Fisica: {defensaFisica} | DefensaPsiquica: {defensaPsiquica} " +
+                $"| Descripción: {descripcion}");
         }
 
         public void RecibirDaño(int daño)
