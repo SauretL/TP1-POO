@@ -43,32 +43,34 @@ namespace TP1
     {
 
         static void Main(string[] args)
-        { 
-            Enemigos goblin = new Enemigos(1, "Goblin", "Un monstruo pequeño y molesto", 15, 5, 5, 2, 50);
-            Enemigos ogro = new Enemigos(2, "Ogro", "Una bestia enorme y fuerte", 30, 15, 10, 5, 120);
+        {
+             Enemigos goblin = new Enemigos(1, "Goblin", "Un monstruo pequeño y molesto", 15, 5, 5, 2, 0, 50);
+             Enemigos ogro = new Enemigos(2, "Ogro", "Una bestia enorme y fuerte", 30, 15, 10, 5, 0, 120);
+             Jefes boss = new Jefes(3, "Boss", "El jefe de todos los enemigos", 40, 30, 12, 10, 0, 100, "Onda de fuego", 0, 3);
 
-            while (ogro.EstaVivo() && goblin.EstaVivo())
-            {
+             while (ogro.EstaVivo() && goblin.EstaVivo())
+             {
 
-                Console.WriteLine("=== ENEMIGOS CREADOS ===");
-                goblin.MostrarInfo();
-                ogro.MostrarInfo();
+                 Console.WriteLine("=== ENEMIGOS CREADOS ===");
+                 goblin.MostrarInfo();
+                 ogro.MostrarInfo();
+                 boss.MostrarInfo();
 
-                int daño1 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
-                int daño2 = ogro.daño(goblin.AtaquePsiquico, goblin.DefensaPsiquica);
-                int daño3 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
+                 int daño1 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
+                 int daño2 = ogro.daño(goblin.AtaquePsiquico, goblin.DefensaPsiquica);
+                 int daño3 = goblin.daño(ogro.AtaqueFisico, goblin.DefensaFisica);
 
-                Console.WriteLine("\n=== COMBATE ===");
-                goblin.RecibirDaño(daño1);
-                ogro.RecibirDaño(daño2);
-                goblin.RecibirDaño(daño3);
+                 Console.WriteLine("\n=== COMBATE ===");
+                 goblin.RecibirDaño(daño1);
+                 ogro.RecibirDaño(daño2);
+                 goblin.RecibirDaño(daño3);
 
-                Console.WriteLine($"\n¿El goblin está vivo? {goblin.EstaVivo()}");
-                Console.WriteLine($"¿El ogro está vivo? {ogro.EstaVivo()}");
+                 Console.WriteLine($"\n¿El goblin está vivo? {goblin.EstaVivo()}");
+                 Console.WriteLine($"¿El ogro está vivo? {ogro.EstaVivo()}");
 
-                Console.ReadLine();
-            }
-        }
+                 Console.ReadLine();
+             }
+        } 
 
         }
     }

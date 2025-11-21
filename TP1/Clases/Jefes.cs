@@ -16,7 +16,7 @@ namespace TP1.Clases
         public Jefes(int id, string nombre, string descripcion, int ataqueFisico, int ataquePsiquico, int defensaFisica, 
             int defensaPsiquica,int hp, int maxHp, string habilidadEspecial, int dañoEspecial, int fasesHP)
             : base(id, nombre, descripcion, ataqueFisico, ataquePsiquico,
-            defensaFisica, defensaPsiquica, maxHp * 2, hp)
+            defensaFisica, defensaPsiquica, maxHp, hp)
         {
             this.habilidadEspecial = habilidadEspecial;
             this.dañoEspecial = (ataqueFisico + ataquePsiquico) / 2;
@@ -55,7 +55,7 @@ namespace TP1.Clases
             if (fasesHP > 1 && Hp == 0)
             {
                 fasesHP = fasesHP - 1;
-                hp = maxHp;
+                Hp = MaxHp;
                 Console.WriteLine($"{Nombre} cambia de fase!"
                                   + " ¡Se vuelve más fuerte!");
             }

@@ -31,8 +31,8 @@ namespace TP1.Clases
             this.ataquePsiquico = ataquePsiquico;
             this.defensaFisica = defensaFisica;
             this.defensaPsiquica = defensaPsiquica;
-            this.hp = hp;
             this.maxHp = maxHp;
+            this.hp = hp;
         }
 
         //get y set
@@ -87,6 +87,12 @@ namespace TP1.Clases
                     hp = 0;
                 } else
                     hp = value; }
+        }
+
+        public int MaxHp
+        {
+            get { return maxHp; }
+            set { maxHp = value; }
         }
 
         //metodos
